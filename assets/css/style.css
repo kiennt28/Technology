@@ -58,6 +58,13 @@ section[id] {
   right: 0;
   top: 0;
   z-index: 10;
+  background: #ffffff;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fullwidth-wrapper {
+  width: 100%;
+  padding: 0 30px;
 }
 
 .main-menu .row {
@@ -70,6 +77,7 @@ section[id] {
 
 .rs-menu {
   float: right;
+  padding-right: 100px;
 }
 
 .nav-menu {
@@ -92,6 +100,7 @@ section[id] {
 
 .slider-area {
   position: relative;
+  top: 0;
 }
 .slider-area img {
   width: 100%;
@@ -109,6 +118,7 @@ section[id] {
 .display-table-cell p {
   font-size: 30px;
   font-weight: 500;
+  color: #ffffff;
 }
 .display-table-cell h1 {
   font-size: 50px;
@@ -120,10 +130,237 @@ section[id] {
   padding: 20px 40px;
   background-color: #ffab00;
   text-decoration: none;
-  color: #1c1c1d;
+  color: #ffffff;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 5px;
+}
+
+.info-content {
+  position: absolute;
+}
+
+#about-us {
+  padding: 200px 0;
+}
+
+.about-left {
+  width: 35%;
+}
+.about-left span {
+  color: #ffab00;
+}
+.about-left h2 {
+  padding: 20px 0;
+  font-size: 34px;
+  font-weight: 700;
+}
+.about-left .about-description {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 400;
+}
+.about-left .about-text {
+  opacity: 0.9;
+  line-height: 24px;
+}
+
+.video-box {
+  height: 70px;
+}
+.video-box i {
+  font-size: 60px;
+  color: #ffab00;
+}
+.video-box .text-box {
+  color: #1c1c1d;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.team-img {
+  width: 100%;
+}
+
+#services {
+  padding: 150px 0;
+  background-color: #f8f8f8;
+}
+
+.services-icon {
+  margin-right: 20px;
+}
+
+.services-content {
+  width: 100%;
+}
+.services-content .services-title {
+  margin-top: -10px;
+  font-weight: 900;
+  line-height: 42px;
+}
+.services-content .services-text {
+  opacity: 0.9;
+  line-height: 24px;
+}
+.services-content ul {
+  margin-bottom: 0;
+  padding: 20px 0 0 0;
+}
+.services-content ul li {
+  margin-bottom: 16px;
+}
+.services-content ul li a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.block-content {
+  width: 100%;
+  height: 900px;
+  background: #2d2d2d url(../images/all/img2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading-title {
+  padding-top: 150px;
+}
+
+.services-wrapper {
+  width: 30%;
+  border: 1px;
+  padding: 30px 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../images/banner/img1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-text {
+  padding-top: 20px;
+  line-height: 24px;
+}
+
+.btn-arrow {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+#strengths {
+  padding: 145px 0;
+}
+
+.header-title {
+  margin-bottom: 50px;
+}
+
+.timetab-heading {
+  height: 100%;
+  margin-right: 38px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  text-align: center;
+}
+.timetab-heading i {
+  font-size: 46px;
+}
+.timetab-heading p {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  line-height: 26px;
+}
+
+.tab .timetab-heading {
+  position: relative;
+  margin-right: 38px;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-align: center;
+}
+.tab .timetab-heading i {
+  font-size: 46px;
+}
+.tab .timetab-heading p {
+  margin-top: 20px;
+}
+.tab .timetab-heading:first-of-type {
+  border-color: transparent;
+  box-shadow: 7px 6px 30px rgba(0, 0, 0, 0.12);
+}
+.tab .timetab-heading:first-of-type::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  left: 50%;
+  bottom: -12px;
+  z-index: 1;
+  height: 26px;
+  background: #ffffff;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  margin-left: -13px;
+}
+
+.timetab-data {
+  margin-top: 50px;
+}
+.timetab-data .timetab-container {
+  border-radius: 5px;
+  box-shadow: 7px 6px 30px rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  padding: 30px;
+}
+.timetab-data .timetab-container .timetab-img {
+  margin-left: 125px;
+  width: 445px;
+  height: 380px;
+}
+.timetab-data .timetab-container .timetab-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.timetab-info {
+  padding-top: 70px;
+}
+.timetab-info p {
+  opacity: 0.8;
+}
+.timetab-info ul {
+  padding-top: 10px;
+}
+.timetab-info ul li {
+  position: relative;
+  padding: 10px 0;
+}
+.timetab-info ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 48%;
+  z-index: 1;
+  left: -30px;
+  width: 0.3125em;
+  height: 0.3125em;
+  border-radius: 50%;
+  background: #ffab00;
+}
+
+.timetab-title {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

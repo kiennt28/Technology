@@ -1,0 +1,38 @@
+#about-us {
+  padding: 200px 0;
+}
+.about-left {
+  width: 35%;
+  & span {
+    color: $yellow;
+  }
+  & h2 {
+    padding: 20px 0;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  & .about-description {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 400;
+  }
+  & .about-text {
+    opacity: 0.9;
+    line-height: 24px;
+  }
+}
+.video-box {
+  height: 70px;
+  & i {
+    font-size: 60px;
+    color: $yellow;
+  }
+  & .text-box {
+    color: $dark;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+}
+.team-img {
+  width: 100%;
+}

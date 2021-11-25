@@ -1,0 +1,30 @@
+#services {
+  padding: 150px 0;
+  background-color: #f8f8f8;
+}
+.services-icon {
+  margin-right: 20px;
+}
+.services-content {
+  width: 100%;
+  & .services-title {
+    margin-top: -10px;
+    font-weight: 900;
+    line-height: 42px;
+  }
+  & .services-text {
+    opacity: 0.9;
+    line-height: 24px;
+  }
+  & ul {
+    margin-bottom: 0;
+    padding: 20px 0 0 0;
+    & li {
+      margin-bottom: 16px;
+      & a {
+        text-decoration: none;
+        font-weight: 700;
+      }
+    }
+  }
+}
