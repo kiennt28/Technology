@@ -51,6 +51,10 @@
     }
   }
 }
+canvas {
+  display: block;
+  position: absolute;
+}
 .slider-area {
   position: relative;
   top: 0;
@@ -76,6 +80,7 @@
     & h1 {
       font-size: 50px;
       color: $yellow;
+      text-transform: uppercase;
     }
     & a {
       margin-top: 50px;
@@ -87,15 +92,35 @@
       font-size: 20px;
       font-weight: 600;
       border-radius: 5px;
+      &:nth-of-type(2) {
+        background-color: rgba(16, 40, 184, 0);
+        border: 1px solid $yellow;
+      }
     }
   }
 }
 .info-content {
-  // width: 100%;
-  // left: 0;
-  // bottom: 0;
-  // transform: translateY(-50%);
-  position: absolute;
+  display: block;
+
+  color: $white;
+  bottom: 0;
+  margin-top: -98px;
 }
 .info-box {
+  padding: 25px 40px 25px 20px;
+  background-color: rgba(48, 48, 48, 0.4);
+  transition: 0.5s;
+  cursor: pointer;
+  & i {
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  & .info-title {
+    font-size: 20px;
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+  &:hover {
+    background: $yellow;
+  }
 }

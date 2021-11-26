@@ -59,44 +59,49 @@
         </div>
       </header>
       <div class="slider-area">
+        <canvas id="canvas"></canvas>
         <img src="./assets/images/banner/2.jpg" alt="" />
         <div class="slider-content">
           <div class="display-table">
             <div class="display-table-cell">
               <div class="container">
-                <p>We specialize</p>
-                <h1>Software Development</h1>
-                <p>as required</p>
-                <a href="#">Read more</a>
-                <a href="#" class="ms-3">Contact</a>
+                <p>Chúng tôi chuyên</p>
+                <h1>Phát triển phần mềm</h1>
+                <p>theo yêu cầu</p>
+                <a href="#">Tìm hiểu thêm</a>
+                <a href="#" class="ms-3">Liên hệ</a>
               </div>
             </div>
           </div>
         </div>
         <div class="info-content">
-          <div class="info-box">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-3 d-flex align-items-center info-content">
-                  <i class="ri-macbook-line"></i>
-                  <h3 class="info-title">Phát triển phần mềm</h3>
-                  <i class="ri-arrow-right-line"></i>
-                </div>
-                <div class="col-lg-3 d-flex align-items-center info-content">
-                  <i class="ri-macbook-line"></i>
-                  <h3 class="info-title">Phát triển phần mềm</h3>
-                  <i class="ri-arrow-right-line"></i>
-                </div>
-                <div class="col-lg-3 d-flex align-items-center info-content">
-                  <i class="ri-macbook-line"></i>
-                  <h3 class="info-title">Phát triển phần mềm</h3>
-                  <i class="ri-arrow-right-line"></i>
-                </div>
-                <div class="col-lg-3 d-flex align-items-center info-content">
-                  <i class="ri-macbook-line"></i>
-                  <h3 class="info-title">Phát triển phần mềm</h3>
-                  <i class="ri-arrow-right-line"></i>
-                </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 d-flex align-items-center info-box">
+                <i class="ri-macbook-line"></i>
+                <h3 class="info-title">Phát triển phần mềm</h3>
+                <i class="ri-arrow-right-line"></i>
+              </div>
+              <div class="col-lg-3 d-flex align-items-center info-box">
+                <i class="ri-lock-unlock-line"></i>
+                <h3 class="info-title">
+                  Dịch vụ <br />
+                  IT
+                </h3>
+                <i class="ri-arrow-right-line"></i>
+              </div>
+              <div class="col-lg-3 d-flex align-items-center info-box">
+                <i class="ri-window-line"></i>
+                <h3 class="info-title">
+                  Tư vấn <br />
+                  & Đào tạo
+                </h3>
+                <i class="ri-arrow-right-line"></i>
+              </div>
+              <div class="col-lg-3 d-flex align-items-center info-box">
+                <i class="ri-pencil-fill"></i>
+                <h3 class="info-title">Sản phẩm Atlassian</h3>
+                <i class="ri-arrow-right-line"></i>
               </div>
             </div>
           </div>
@@ -108,11 +113,11 @@
       <div class="container">
         <div class="row d-flex justify-content-between">
           <div class="col-lg-6 about-left">
-            <span>About us</span>
-            <h2>Flexible software development service</h2>
+            <span>Về chúng tôi</span>
+            <h2>Dịch vụ phát triển phần mềm linh hoạt</h2>
             <p class="about-description">
-              Minh Hoang is an Agile software company specializing in developing
-              high-quality, cost-optimized software
+              Minh Hoang là công ty phần mềm theo Agile chuyên phát triển phần
+              mềm chất lượng cao, chi phí tối ưu.
             </p>
             <p class="about-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -122,81 +127,94 @@
             </p>
             <div class="video-box d-flex align-items-center gap-3">
               <i class="ri-play-circle-fill"></i>
-              <h5 class="text-box">Watch us work at Minh Hoang</h5>
+              <h5 class="text-box">Xem chúng tôi làm việc ở Minh Hoang</h5>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 about-right">
             <img
               src="./assets/images/all/team-img.jpg"
               alt=""
               class="team-img"
             />
+            <img
+              src="./assets/images/all/section_bg_01.png"
+              alt=""
+              class="circle-img"
+            />
           </div>
         </div>
       </div>
+      <div class="video-player">
+        <iframe
+          width="100%"
+          height="600px"
+          src="https://www.youtube.com/embed/5zKQrgkOL2g"
+        ></iframe>
+        <label for="nav-input" class="ri-close-line close-btn"></label>
+      </div>
+      <input type="checkbox" class="nav-checkbox" name="" id="nav-input" />
+      <div class="overlay"></div>
     </section>
     <!--Services-->
-    <section id="services">
+    <section id="services-area">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 d-flex">
-            <div class="services-icon">
-              <img src="./assets/images/all/sv-icon.png" alt="" />
+        <div class="services-heading text-center">
+          <span>Dịch vụ</span>
+          <h2 class="service-title">Chúng tôi làm</h2>
+        </div>
+        <div class="service-item text-center">
+          <div class="row">
+            <div class="col-lg-3 single-item">
+              <div class="item">
+                <div class="info">
+                  <h4>Dịch vụ IT</h4>
+                  <i class="ri-window-line"></i>
+                  <p>
+                    Các dịch vụ hỗ trợ hoạt động CNTT và quản lý, tối ưu hiệu
+                    quả phát triển phần mềm của doanh nghiệp.
+                  </p>
+                  <a href="#" class="btn-standard">Tìm hiểu thêm</a>
+                </div>
+              </div>
             </div>
-            <div class="services-content">
-              <h3 class="services-title">
-                Develop <br />
-                software
-              </h3>
-              <p class="services-text">
-                Design, develop and operate software according to the needs and
-                business problems of each customer.
-              </p>
-              <ul>
-                <li><a href="#">Outsourcing software on demand</a></li>
-                <li><a href="#">Outsourcing software on demand</a></li>
-                <li><a href="#">Outsourcing software on demand</a></li>
-              </ul>
+            <div class="col-lg-3">
+              <div class="item">
+                <div class="info">
+                  <h4>Giải pháp</h4>
+                  <i class="ri-service-line"></i>
+                  <p>
+                    Các dịch vụ hỗ trợ hoạt động CNTT và quản lý, tối ưu hiệu
+                    quả phát triển phần mềm của doanh nghiệp.
+                  </p>
+                  <a href="#" class="btn-standard">Tìm hiểu thêm</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4 d-flex">
-            <div class="services-icon">
-              <img src="./assets/images/all/sv-icon1.png" alt="" />
+            <div class="col-lg-3">
+              <div class="item">
+                <div class="info">
+                  <h4>Phân tích</h4>
+                  <i class="ri-wallet-line"></i>
+                  <p>
+                    Các dịch vụ hỗ trợ hoạt động CNTT và quản lý, tối ưu hiệu
+                    quả phát triển phần mềm của doanh nghiệp.
+                  </p>
+                  <a href="#" class="btn-standard">Tìm hiểu thêm</a>
+                </div>
+              </div>
             </div>
-            <div class="services-content">
-              <h3 class="services-title">
-                Develop <br />
-                software
-              </h3>
-              <p class="services-text">
-                Design, develop and operate software according to the needs and
-                business problems of each customer.
-              </p>
-              <ul>
-                <li><a href="#">Outsourcing software on demand</a></li>
-                <li><a href="#">Outsourcing software on demand</a></li>
-                <li><a href="#">Outsourcing software on demand</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 d-flex">
-            <div class="services-icon">
-              <img src="./assets/images/all/sv-icon2.png" alt="" />
-            </div>
-            <div class="services-content">
-              <h3 class="services-title">
-                Develop <br />
-                software
-              </h3>
-              <p class="services-text">
-                Design, develop and operate software according to the needs and
-                business problems of each customer.
-              </p>
-              <ul>
-                <li><a href="#">Outsourcing software on demand</a></li>
-                <li><a href="#">Outsourcing software on demand</a></li>
-                <li><a href="#">Outsourcing software on demand</a></li>
-              </ul>
+            <div class="col-lg-3">
+              <div class="item">
+                <div class="info">
+                  <h4>Dịch vụ IT</h4>
+                  <i class="ri-qr-code-line"></i>
+                  <p>
+                    Các dịch vụ hỗ trợ hoạt động CNTT và quản lý, tối ưu hiệu
+                    quả phát triển phần mềm của doanh nghiệp.
+                  </p>
+                  <a href="#" class="btn-standard">Tìm hiểu thêm</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -204,7 +222,7 @@
     </section>
     <section class="block-content text-white">
       <div class="container">
-        <h2 class="heading-title text-center mb-5">Why choose Minh Hoang?</h2>
+        <h2 class="heading-title text-center mb-5">Tại sao chọn Minh Hoang?</h2>
         <div class="row justify-content-between">
           <div class="col-lg-4 services-wrapper">
             <div class="services-box">
@@ -271,19 +289,19 @@
           <div class="col-lg-2">
             <div class="timetab-heading">
               <i class="ri-time-line"></i>
-              <p class="tab-title">Telcos</p>
+              <p class="tab-title">Customer</p>
             </div>
           </div>
           <div class="col-lg-2">
             <div class="timetab-heading">
               <i class="ri-window-line"></i>
-              <p class="tab-title">Telcos</p>
+              <p class="tab-title">IoT</p>
             </div>
           </div>
           <div class="col-lg-2">
             <div class="timetab-heading">
               <i class="ri-currency-line"></i>
-              <p class="tab-title">Telcos</p>
+              <p class="tab-title">Finance</p>
             </div>
           </div>
           <div class="col-lg-2">

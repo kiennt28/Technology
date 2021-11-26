@@ -1,7 +1,9 @@
 #about-us {
-  padding: 200px 0;
+  padding: 250px 0;
+  position: relative;
 }
 .about-left {
+  position: relative;
   width: 35%;
   & span {
     color: $yellow;
@@ -20,10 +22,45 @@
     opacity: 0.9;
     line-height: 24px;
   }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-color: #f6f6f6;
+    z-index: -1;
+    left: -48px;
+    top: -54px;
+    border-radius: 5px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    z-index: -1;
+    background-color: #f6f6f6;
+    top: -8px;
+    left: 2px;
+    border-radius: 5px;
+  }
+}
+.about-right {
+  position: relative;
+}
+.team-img {
+  position: absolute;
+  z-index: 2;
+}
+.circle-img {
+  position: absolute;
+  left: 160px;
+  top: -155px;
 }
 .video-box {
   height: 70px;
   & i {
+    cursor: pointer;
     font-size: 60px;
     color: $yellow;
   }
@@ -35,4 +72,41 @@
 }
 .team-img {
   width: 100%;
+}
+.video-player {
+  width: 60%;
+  position: fixed;
+  left: 50%;
+  top: 60%;
+  z-index: 5;
+  transform: translate(-50%, -60%);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.8);
+  z-index: 4;
+  display: none;
+}
+.close-btn {
+  position: absolute;
+  z-index: 6;
+  font-size: 50px;
+  color: $yellow;
+  top: -90px;
+  right: -350px;
+  display: none;
+}
+#nav-input {
+  z-index: 66;
+  position: absolute;
+}
+.nav-checkbox:checked ~ .overlay {
+  display: block;
+}
+.nav-checkbox:checked ~ .close-btn {
+  display: block;
 }

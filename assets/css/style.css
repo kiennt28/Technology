@@ -98,6 +98,11 @@ section[id] {
   font-weight: 600;
 }
 
+canvas {
+  display: block;
+  position: absolute;
+}
+
 .slider-area {
   position: relative;
   top: 0;
@@ -123,6 +128,7 @@ section[id] {
 .display-table-cell h1 {
   font-size: 50px;
   color: #ffab00;
+  text-transform: uppercase;
 }
 .display-table-cell a {
   margin-top: 50px;
@@ -135,16 +141,44 @@ section[id] {
   font-weight: 600;
   border-radius: 5px;
 }
+.display-table-cell a:nth-of-type(2) {
+  background-color: rgba(16, 40, 184, 0);
+  border: 1px solid #ffab00;
+}
 
 .info-content {
-  position: absolute;
+  display: block;
+  color: #ffffff;
+  bottom: 0;
+  margin-top: -98px;
+}
+
+.info-box {
+  padding: 25px 40px 25px 20px;
+  background-color: rgba(48, 48, 48, 0.4);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.info-box i {
+  font-size: 40px;
+  margin-right: 20px;
+}
+.info-box .info-title {
+  font-size: 20px;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+.info-box:hover {
+  background: #ffab00;
 }
 
 #about-us {
-  padding: 200px 0;
+  padding: 250px 0;
+  position: relative;
 }
 
 .about-left {
+  position: relative;
   width: 35%;
 }
 .about-left span {
@@ -164,11 +198,49 @@ section[id] {
   opacity: 0.9;
   line-height: 24px;
 }
+.about-left::before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: #f6f6f6;
+  z-index: -1;
+  left: -48px;
+  top: -54px;
+  border-radius: 5px;
+}
+.about-left::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  z-index: -1;
+  background-color: #f6f6f6;
+  top: -8px;
+  left: 2px;
+  border-radius: 5px;
+}
+
+.about-right {
+  position: relative;
+}
+
+.team-img {
+  position: absolute;
+  z-index: 2;
+}
+
+.circle-img {
+  position: absolute;
+  left: 160px;
+  top: -155px;
+}
 
 .video-box {
   height: 70px;
 }
 .video-box i {
+  cursor: pointer;
   font-size: 60px;
   color: #ffab00;
 }
@@ -182,37 +254,125 @@ section[id] {
   width: 100%;
 }
 
-#services {
+.video-player {
+  width: 60%;
+  position: fixed;
+  left: 50%;
+  top: 60%;
+  z-index: 5;
+  transform: translate(-50%, -60%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 4;
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  z-index: 6;
+  font-size: 50px;
+  color: #ffab00;
+  top: -90px;
+  right: -350px;
+  display: none;
+}
+
+#nav-input {
+  z-index: 66;
+  position: absolute;
+}
+
+.nav-checkbox:checked ~ .overlay {
+  display: block;
+}
+
+.nav-checkbox:checked ~ .close-btn {
+  display: block;
+}
+
+#services-area {
   padding: 150px 0;
   background-color: #f8f8f8;
 }
 
-.services-icon {
-  margin-right: 20px;
+.services-heading span {
+  color: #ffab00;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.services-heading .service-title {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-.services-content {
-  width: 100%;
+.service-item .item {
+  padding: 50px 30px;
+  box-shadow: 0 15px 55px -5px rgba(9, 31, 67, 0.1);
+  background: #ffffff;
 }
-.services-content .services-title {
-  margin-top: -10px;
-  font-weight: 900;
-  line-height: 42px;
+.service-item .item h4 {
+  font-weight: 600;
+  margin-bottom: 35px;
 }
-.services-content .services-text {
-  opacity: 0.9;
-  line-height: 24px;
+.service-item .item i {
+  display: inline-block;
+  font-size: 70px;
+  margin-bottom: 30px;
+  color: #ffab00;
+  background: linear-gradient(90deg, #031941 0%, #ffab00 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
-.services-content ul {
-  margin-bottom: 0;
-  padding: 20px 0 0 0;
+.service-item .item p {
+  color: #666666;
+  margin: 0 0 15px;
+  text-transform: none;
+  font-weight: 400;
 }
-.services-content ul li {
-  margin-bottom: 16px;
-}
-.services-content ul li a {
+.service-item .item a {
+  display: inline-block;
+  text-align: center;
+  color: #ffab00;
+  margin-top: 15px;
+  border: 1px solid #e7e7e7;
+  padding: 20px 35px;
+  border-radius: 30px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.service-item .item a:hover {
+  outline: none;
+}
+.service-item .item a:hover::after {
+  left: 0;
+}
+
+.btn-standard:hover {
+  color: #ffffff !important;
+}
+.btn-standard::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #ffab00;
+  transition: all 0.35s ease-in-out;
+  left: -100%;
+  bottom: 0;
+  z-index: -1;
 }
 
 .block-content {
