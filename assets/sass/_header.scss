@@ -1,6 +1,7 @@
 .full-width-header {
   & .rs-header {
     position: fixed;
+    z-index: 3;
   }
 }
 .rs-header {

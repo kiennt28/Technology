@@ -18,8 +18,18 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.35s ease-in-out;
+}
+.services-wrapper {
+  &:hover {
+    background: linear-gradient(90deg, #ff4100 0%, #ffab00 100%);
+    & .services-text {
+      opacity: 1;
+    }
+  }
 }
 .services-text {
+  opacity: 0;
   padding-top: 20px;
   line-height: 24px;
 }
@@ -33,4 +43,9 @@
   border: 1px solid $white;
   border-radius: 50%;
   font-size: 20px;
+}
+.btn-arrow {
+  &:hover {
+    color: #2d2d2d;
+  }
 }

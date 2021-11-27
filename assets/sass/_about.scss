@@ -54,14 +54,14 @@
 }
 .circle-img {
   position: absolute;
-  left: 160px;
-  top: -155px;
+  left: 140px;
+  top: -165px;
 }
 .video-box {
   height: 70px;
   & i {
     cursor: pointer;
-    font-size: 60px;
+    font-size: 72px;
     color: $yellow;
   }
   & .text-box {
@@ -80,6 +80,7 @@
   top: 60%;
   z-index: 5;
   transform: translate(-50%, -60%);
+  display: none;
 }
 .overlay {
   position: fixed;
@@ -92,12 +93,13 @@
   display: none;
 }
 .close-btn {
-  position: absolute;
+  position: fixed;
   z-index: 6;
   font-size: 50px;
   color: $yellow;
-  top: -90px;
-  right: -350px;
+  top: 10px;
+  right: 20px;
+  z-index: 666;
   display: none;
 }
 #nav-input {
@@ -108,5 +110,11 @@
   display: block;
 }
 .nav-checkbox:checked ~ .close-btn {
+  display: block;
+}
+.nav-checkbox:checked ~ .video-player {
+  display: block;
+}
+.nav-checkbox:checked ~ .video-box {
   display: block;
 }

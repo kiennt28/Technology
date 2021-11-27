@@ -50,6 +50,7 @@ section[id] {
 
 .full-width-header .rs-header {
   position: fixed;
+  z-index: 3;
 }
 
 .rs-header {
@@ -232,8 +233,8 @@ canvas {
 
 .circle-img {
   position: absolute;
-  left: 160px;
-  top: -155px;
+  left: 140px;
+  top: -165px;
 }
 
 .video-box {
@@ -241,7 +242,7 @@ canvas {
 }
 .video-box i {
   cursor: pointer;
-  font-size: 60px;
+  font-size: 72px;
   color: #ffab00;
 }
 .video-box .text-box {
@@ -261,6 +262,7 @@ canvas {
   top: 60%;
   z-index: 5;
   transform: translate(-50%, -60%);
+  display: none;
 }
 
 .overlay {
@@ -275,12 +277,13 @@ canvas {
 }
 
 .close-btn {
-  position: absolute;
+  position: fixed;
   z-index: 6;
   font-size: 50px;
   color: #ffab00;
-  top: -90px;
-  right: -350px;
+  top: 10px;
+  right: 20px;
+  z-index: 666;
   display: none;
 }
 
@@ -294,6 +297,14 @@ canvas {
 }
 
 .nav-checkbox:checked ~ .close-btn {
+  display: block;
+}
+
+.nav-checkbox:checked ~ .video-player {
+  display: block;
+}
+
+.nav-checkbox:checked ~ .video-box {
   display: block;
 }
 
@@ -329,9 +340,6 @@ canvas {
   font-size: 70px;
   margin-bottom: 30px;
   color: #ffab00;
-  background: linear-gradient(90deg, #031941 0%, #ffab00 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
 }
 .service-item .item p {
   color: #666666;
@@ -396,9 +404,18 @@ canvas {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.35s ease-in-out;
+}
+
+.services-wrapper:hover {
+  background: linear-gradient(90deg, #ff4100 0%, #ffab00 100%);
+}
+.services-wrapper:hover .services-text {
+  opacity: 1;
 }
 
 .services-text {
+  opacity: 0;
   padding-top: 20px;
   line-height: 24px;
 }
@@ -415,6 +432,10 @@ canvas {
   font-size: 20px;
 }
 
+.btn-arrow:hover {
+  color: #2d2d2d;
+}
+
 #strengths {
   padding: 145px 0;
 }
@@ -425,7 +446,6 @@ canvas {
 
 .timetab-heading {
   height: 100%;
-  margin-right: 38px;
   padding: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
@@ -433,6 +453,7 @@ canvas {
 }
 .timetab-heading i {
   font-size: 46px;
+  color: #ffab00;
 }
 .timetab-heading p {
   margin-top: 20px;
@@ -440,25 +461,27 @@ canvas {
   line-height: 26px;
 }
 
-.tab .timetab-heading {
+.tab {
+  cursor: pointer;
+}
+.tab.active .timetab-heading {
   position: relative;
-  margin-right: 38px;
   padding: 20px;
   border: 1px solid #ffffff;
   border-radius: 5px;
   text-align: center;
 }
-.tab .timetab-heading i {
+.tab.active .timetab-heading i {
   font-size: 46px;
 }
-.tab .timetab-heading p {
+.tab.active .timetab-heading p {
   margin-top: 20px;
 }
-.tab .timetab-heading:first-of-type {
+.tab.active .timetab-heading:first-of-type {
   border-color: transparent;
   box-shadow: 7px 6px 30px rgba(0, 0, 0, 0.12);
 }
-.tab .timetab-heading:first-of-type::before {
+.tab.active .timetab-heading:first-of-type::before {
   content: "";
   position: absolute;
   width: 26px;
@@ -476,10 +499,14 @@ canvas {
   margin-top: 50px;
 }
 .timetab-data .timetab-container {
+  display: none;
+}
+.timetab-data .timetab-container.active {
   border-radius: 5px;
   box-shadow: 7px 6px 30px rgba(0, 0, 0, 0.12);
   background: #ffffff;
   padding: 30px;
+  display: block;
 }
 .timetab-data .timetab-container .timetab-img {
   margin-left: 125px;
@@ -521,6 +548,56 @@ canvas {
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 20px;
+}
+
+#technology {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.technology-title {
+  font-size: 38px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.technology-box img {
+  width: 80%;
+}
+
+#contacts {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #f8f8f8;
+}
+
+.content-heading {
+  margin-bottom: 30px;
+}
+.content-heading h2 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.content-heading p {
+  color: #666666;
+  margin: 0 0 15px;
+  text-transform: none;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+.contact-form .form-group input {
+  border: none;
+  box-shadow: inherit;
+  padding: 15px;
+  background: #ffffff;
+}
+.contact-form .form-group textarea {
+  padding: 15px;
+  min-height: 150px;
+  width: 100%;
+  resize: none;
 }
 
 /*# sourceMappingURL=style.css.map */
