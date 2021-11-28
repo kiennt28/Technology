@@ -2,6 +2,10 @@
   padding: 250px 0;
   position: relative;
 }
+.about-content {
+  display: flex;
+  gap: 100px;
+}
 .about-left {
   position: relative;
   width: 35%;
@@ -117,4 +121,56 @@
 }
 .nav-checkbox:checked ~ .video-box {
   display: block;
+}
+@media only screen and (max-width: 1440px) {
+  .about-content {
+    display: flex;
+    gap: 100px;
+  }
+  
+
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1025px) {
+  #about-us {
+    padding: 150px 0;
+  }
+  .about-content {
+    gap: 0;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .team-img {
+    display: none;
+  }
+  .circle-img {
+     display:none;    
+  }
+  .service-box {
+    row-gap: 24px;
+  }
+}
+@media only screen and (max-width: 739px) {
+  #about-us {
+    padding: 150px 0;
+  }
+  .video-player {
+    width: 80%;
+    & iframe {
+      height: 440px;
+    }
+  }
+  .team-img {
+    display: none;
+  }
+  .circle-img {
+     display:none;    
+  }
+  .about-left {
+    width: 100%;
+  }
+  .about-content {
+    gap: 0;
+  }
 }

@@ -13,3 +13,11 @@
     width: 80%;
   }
 }
+@media only screen and (max-width: 739px) {
+  #technology {
+    padding-bottom: 50px;
+  }
+  .technology-box {
+    row-gap: 24px;
+  }
+}

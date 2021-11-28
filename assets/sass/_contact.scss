@@ -116,3 +116,17 @@
     height: 360px;
   }
 }
+@media only screen and (min-width: 740px) and (max-width: 1025px) {
+  .contacts-box {
+    row-gap: 24px;
+  }
+}
+@media only screen and (max-width: 739px) {
+  #contacts {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .contacts-box {
+    row-gap: 24px;
+  }
+}

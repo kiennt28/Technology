@@ -75,3 +75,9 @@
     z-index: -1;
   }
 }
+@media only screen and (max-width: 739px) {
+  .service-box {
+    row-gap: 20px;
+  }
+
+}

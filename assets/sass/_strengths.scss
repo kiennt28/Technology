@@ -108,3 +108,35 @@
   font-weight: 700;
   padding-bottom: 20px;
 }
+@media only screen and (min-width: 740px) and (max-width: 1025px) {
+  .timetab-data .timetab-container .timetab-img {
+    margin-left: 0;
+    width: 100%;
+    height: 380px;
+  }
+
+ .strengths-box {
+   row-gap: 24px;
+  }
+ .technology-box {
+   row-gap: 24px;
+  }
+}
+@media only screen and (max-width: 739px) {
+  #strengths {
+    padding-bottom: 100px;
+  }
+  .strengths-box {
+    row-gap: 24px;
+  }
+  .timetab-data {
+    & .timetab-container {
+      & .timetab-img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+      }
+    }
+  } 
+  
+}
