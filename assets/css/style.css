@@ -233,7 +233,7 @@ canvas {
 
 .circle-img {
   position: absolute;
-  left: 140px;
+  left: 120px;
   top: -165px;
 }
 
@@ -598,6 +598,80 @@ canvas {
   min-height: 150px;
   width: 100%;
   resize: none;
+  border: none;
+  box-shadow: inherit;
+}
+
+.btn-submit {
+  padding: 15px 40px;
+  background: #ffab00;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.contact-tabs ul {
+  margin-bottom: 30px;
+  position: relative;
+}
+.contact-tabs ul .nav-item .nav-link {
+  background: transparent;
+  border: none;
+  padding: 15px 0;
+  margin-right: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1c1c1d;
+}
+.contact-tabs ul .nav-item .nav-link.active {
+  color: #ffab00;
+}
+
+.nav-tabs .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  border-radius: 15px;
+  background-color: #ffab00;
+  transition: all 0.2s ease;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+.tab-pane ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon i {
+  color: #ffab00;
+  display: inline-block;
+  font-size: 30px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  line-height: 80px;
+  background: #ffffff;
+  border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+  margin-right: 20px;
+  box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
+}
+
+#tab2 iframe {
+  width: 100%;
+  height: 360px;
 }
 
 /*# sourceMappingURL=style.css.map */
