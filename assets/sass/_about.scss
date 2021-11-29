@@ -127,8 +127,9 @@
     display: flex;
     gap: 100px;
   }
-  
-
+  .circle-img {
+    left: 60px;
+  }
 }
 
 @media only screen and (min-width: 740px) and (max-width: 1025px) {
@@ -145,7 +146,7 @@
     display: none;
   }
   .circle-img {
-     display:none;    
+    display: none;
   }
   .service-box {
     row-gap: 24px;
@@ -165,7 +166,7 @@
     display: none;
   }
   .circle-img {
-     display:none;    
+    display: none;
   }
   .about-left {
     width: 100%;

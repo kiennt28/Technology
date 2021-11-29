@@ -56,20 +56,21 @@
 .nav-toggle {
   display: none;
 }
-canvas {
-  display: block;
-  position: absolute;
-}
 .slider-area {
   position: relative;
   top: 0;
-  & img {
-    width: 100%;
-    height: 950px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  max-width: 100%;
+  margin: auto;
+  & .mySlider {
+    display: none;
+    & img {
+      width: 100%;
+      height: 950px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      vertical-align: middle;
+    }
   }
 }
 .slider-content {
@@ -258,5 +259,5 @@ canvas {
         margin-left: 0 !important;
       }
     }
-  } 
+  }
 }
