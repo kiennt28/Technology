@@ -1,59 +1,61 @@
 #footer {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
+  background: #fafafa;
+  box-shadow: 1px 0px 10px rgb(0 0 0 / 10%);
 }
 .footer-items {
-    padding-top: 100px;
-    & .footer-about {
-        & p {
-            font-weight: 600;
-        }
-        & img {
-            max-width: 100%;
-        }
-        & .footer-social {
-            margin-top: 25px;
-            text-align: center;
-            & a {
-                margin-right: 25px;
-                text-decoration: none;
-                color: $yellow;
-                & i {
-                    font-size: 30px;
-                }
-            }
-        }
+  padding-top: 100px;
+  & .footer-about {
+    & p {
+      font-weight: 600;
     }
+    & img {
+      max-width: 100%;
+    }
+    & .footer-social {
+      margin-top: 25px;
+      text-align: center;
+      & a {
+        margin-right: 25px;
+        text-decoration: none;
+        color: $yellow;
+        & i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
 }
 .footer-item {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 .widget-title {
-    font-weight: 600;
+  font-weight: 600;
 }
 .address {
-    & ul {
-        padding-left: 0;
-        margin-top: 20px;
-        & li {
-            padding-bottom: 20px;
-            & strong {
-                font-size: 20px;
-            }
-            & p {
-                display: inline-block;
-                font-weight: 500;
-            }
-        }
+  & ul {
+    padding-left: 0;
+    margin-top: 20px;
+    & li {
+      padding-bottom: 20px;
+      & strong {
+        font-size: 20px;
+      }
+      & p {
+        display: inline-block;
+        font-weight: 500;
+      }
     }
+  }
 }
 .footer-link {
-    & p {
-        margin-top: 20px;
-        font-weight: 500;
-    }
+  & p {
+    margin-top: 20px;
+    font-weight: 500;
+  }
 }
 @media only screen and (max-width: 739px) {
-    .footer-link {
-        padding-left: 32px;
-    }
+  .footer-link {
+    padding-left: 32px;
+  }
 }

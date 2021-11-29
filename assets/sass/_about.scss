@@ -122,6 +122,193 @@
 .nav-checkbox:checked ~ .video-box {
   display: block;
 }
+.works-about {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 150px;
+  & .work-about-items {
+    position: relative;
+    z-index: 1;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 20%;
+      top: 0;
+      height: 100%;
+      width: 500%;
+      background: #fff7e6;
+      z-index: -1;
+    }
+    & .info {
+      padding-right: 80px;
+      & > h5 {
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 25px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        padding-left: 45px;
+        color: $yellow;
+        &::before {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          content: "";
+          height: 2px;
+          width: 30px;
+          background: $yellow;
+          margin-top: -1px;
+        }
+      }
+      & h2 {
+        font-weight: 600;
+        margin-bottom: 25px;
+      }
+      & p {
+        color: #666666;
+        margin: 0 0 15px;
+        text-transform: none;
+        font-weight: 400;
+      }
+      & ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        & li {
+          margin-top: 25px;
+          align-items: center;
+          position: relative;
+          z-index: 1;
+          padding-left: 25px;
+          &::after {
+            content: "\eb80";
+            position: absolute;
+            left: 0;
+            top: 6px;
+            height: 100%;
+            width: 100%;
+            font-weight: 600;
+            color: $yellow;
+            font-family: "remixicon" !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+          }
+        }
+      }
+      & a {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 20px 40px;
+        background: $yellow;
+        text-decoration: none;
+        border-radius: 5px;
+        color: $dark;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.thumb {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+  & img {
+    border: none;
+    outline: none;
+    max-width: 100%;
+  }
+  & .fun-fact {
+    position: absolute;
+    left: -50px;
+    bottom: -50px;
+    background: #ffffff;
+    padding: 50px;
+    box-shadow: 0 5px 30px 0 rgb(214 215 216 / 57%);
+    text-align: center;
+    & .timer {
+      display: inline-block;
+      font-weight: 800;
+      color: #0e2b3d;
+      font-size: 2rem;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 10px;
+      margin-left: -20px;
+      &::after {
+        position: absolute;
+        right: -25px;
+        top: 4px;
+        content: "\ea13";
+        font-family: "remixicon" !important;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+    & .medium {
+      display: block;
+      font-weight: 600;
+    }
+  }
+}
+.site-heading {
+  margin-bottom: 60px;
+  overflow: hidden;
+  & h4 {
+    color: $yellow;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  & h2 {
+    display: inline-block;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    position: relative;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    &::before {
+      background: $yellow none repeat scroll 0 0;
+      bottom: 0;
+      content: "";
+      height: 2px;
+      left: 50%;
+      margin-left: -25px;
+      position: absolute;
+      width: 40px;
+    }
+  }
+}
+.team-area {
+  padding-bottom: 50px;
+  & .team-items {
+    & .thumb {
+      & img {
+        border-radius: 8px;
+      }
+    }
+    & .single-item {
+      margin-bottom: 30px;
+    }
+    & .info {
+      background: #ffffff;
+      padding-bottom: 0;
+      & h4 {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      & span {
+        color: $yellow;
+        font-weight: 600;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1440px) {
   .about-content {
     display: flex;
