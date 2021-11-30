@@ -1,30 +1,3 @@
-// .container-fill {
-//   padding: 0 15px;
-//   margin: auto;
-//   max-width: 100%;
-// }
-@media (min-width: 1200px) {
-  .container-fill {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-  }
-}
-@media (min-width: 992px) {
-  .container-fill {
-    max-width: 960px;
-  }
-}
-@media (min-width: 768px) {
-  .container-fill {
-    max-width: 720px;
-  }
-}
-@media (min-width: 576) {
-  .container-fill {
-    max-width: 540px;
-  }
-}
 .case-studies-area {
   padding-bottom: 120px;
   & .item {
@@ -127,6 +100,26 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 30px;
+    }
+  }
+}
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .case-carousel {
+    & .owl-stage-outer {
+      & .owl-stage {
+        grid-template-columns: 1fr !important;
+        grid-row-gap: 30px !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 739px) {
+  .case-carousel {
+    & .owl-stage-outer {
+      & .owl-stage {
+        grid-template-columns: 1fr !important;
+        grid-row-gap: 30px !important;
+      }
     }
   }
 }
