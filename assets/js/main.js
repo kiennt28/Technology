@@ -13,7 +13,7 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
 
-  setTimeout(showSlides, 2000);
+  setTimeout(showSlides, 5000);
 }
 
 const tabs = document.querySelectorAll(".tab");
